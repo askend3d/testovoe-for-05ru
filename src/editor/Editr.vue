@@ -20,35 +20,31 @@ import bus from 'src/editor/bus.js';
 import debounce from "debounce";
 import Btn from "./Button.vue";
 
-import bold from "./modules/bold.js";
-import italic from "./modules/italic.js";
-import underline from "./modules/underline.js";
 
-import alignLeft from "./modules/alignLeft.js"
-import alignCenter from "./modules/alignCenter.js"
-import alignRight from "./modules/alignRight.js"
+
 
 
 import headings from "./modules/headings.vue";
-import hyperlink from "./modules/hyperlink.vue";
-import code from "./modules/code.js";
-import list_ordered from "./modules/list_ordered.js";
-import list_unordered from "./modules/list_unordered.js";
 
 import image from "./modules/image.vue";
-import table from "./modules/table.vue";
 
-import removeFormat from "./modules/removeFormat.js";
 
 import separator from "./modules/separator.js";
 
+import undo from "./modules/undo.vue";
+import redo from "./modules/redo.vue";
+import paragraph from "./modules/paragraph.vue";
+import copyHtml from "./modules/copyHtml.vue";
+
 const modules = [
-    bold, italic, underline, separator,
-    alignLeft, alignCenter, alignRight, separator,
-    headings, hyperlink, code,
-    list_ordered, list_unordered, separator,
-    image, table, separator,
-    removeFormat
+    undo,
+    redo,
+    separator,
+    headings,
+    paragraph,
+    separator,
+    image,
+    copyHtml
 ];
 
 export default {

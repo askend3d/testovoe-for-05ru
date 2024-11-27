@@ -1,4 +1,3 @@
-import english from './locales/english';
 
 function Emitter() {
   const self = {
@@ -28,7 +27,7 @@ emitter.options = {
     paragraphSeparator: "div",
     maxHeight: undefined,
     customModules: [],
-    locale: english
+    locale: {}
 }
 
 emitter.utils = {
